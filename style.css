@@ -1,0 +1,420 @@
+/* Start global styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: c;
+}
+
+/* End global styles */
+
+/* Start nav */
+.logo__img {
+    width: 100px;
+}
+
+.logo img {
+    width: 70%;
+}
+
+.logo span {
+    color: #000;
+    text-align: right;
+    font-family: "Cairo", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 10px;
+}
+
+.signin-btn {
+    background-color: #40a3ff;
+    color: #fff;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.signin-btn:hover {
+    color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1), 0 0 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-weight: 700;
+}
+
+a:hover,
+a.active:not(.signin-btn) {
+    color: #68ab1c;
+}
+
+/* End nav */
+
+/* Start banner */
+.banner {
+    height: calc(100vh - 80px);
+    padding-bottom: 200px;
+    background: linear-gradient(#40a3ff36 20%, #fff, #fff);
+}
+
+.heading {
+    text-align: right;
+    padding-right: 20%;
+}
+
+.dr-img {
+    position: relative;
+}
+
+.background-square {
+    background-color: #40a3ff;
+    opacity: 50%;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.dr-img img {
+    width: 70%;
+    z-index: 1;
+}
+
+.dr-name {
+    background-color: #40a3ff;
+    width: 73%;
+    height: 15%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dr-name span {
+    color: #fff;
+    text-align: center;
+    font-family: Cairo;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h1 {
+    color: #000;
+    text-align: right;
+    font-family: Cairo;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+p {
+    color: #474747;
+    text-align: right;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2em;
+}
+
+.questionare-btn {
+    border-radius: 20px;
+    border: 1px solid #73d800;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.questionare-btn:hover {
+    border: none;
+    background-color: #73d800;
+    color: #fff;
+}
+
+.regiter-btn {
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .dr-img img {
+        width: 100%;
+    }
+
+    .dr-name {
+        width: 100%;
+    }
+
+    .background-square {
+        right: 15%;
+    }
+
+    .heading {
+        text-align: center;
+        padding-right: 5%;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* End banner */
+
+/* Start features */
+.features {
+    padding: 100px 0 0;
+    margin-top: 100px;
+}
+
+.feature {
+    text-align: center;
+}
+
+.v-icon {
+    font-size: 50px;
+}
+
+@media (max-width: 768px) {
+    .feature {
+        margin-bottom: 50px;
+    }
+}
+
+/* End features */
+
+/* Start about */
+.about-us {
+    padding: 50px 0;
+}
+
+.heading {
+    text-align: right;
+    padding-right: 20%;
+}
+
+h2 {
+    color: #000;
+    text-align: right;
+    font-family: Cairo;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+p {
+    color: #474747;
+    text-align: right;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2em;
+}
+
+.show-more {
+    border-radius: 20px;
+    border: 1px solid #73d800;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #73d800;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.show-more:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .heading {
+        padding: 0 10px;
+        margin-bottom: 30px;
+    }
+}
+
+/* End about */
+/* Start call to action */
+.call-to-action {
+    background-image: url("../images/call-to-action.svg");
+    background-position: center;
+    background-size: cover;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: #000;
+    text-align: right;
+    font-family: Cairo;
+    font-size: 67px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.register-btn {
+    background: #173c60;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: 0.4s ease;
+    text-decoration: none;
+}
+
+.register-btn:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 42px;
+        text-align: center;
+    }
+}
+
+/* End call to action */
+
+/* Start reservation */
+.reservation {
+    padding: 100px 0;
+}
+
+.heading {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.heading img {
+    width: 10%;
+}
+
+.heading h3 {
+    color: #000;
+    text-align: right;
+    font-family: Cairo;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: #73d800;
+}
+
+form {
+    text-align: right;
+    padding-top: 30px;
+}
+
+.reserve {
+    border-radius: 20px;
+    /* border: 1px solid #73d800; */
+    padding: 5px 20px;
+    background-color: #73d800;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.reserve:hover {
+    transform: scale(1.1);
+}
+
+/* End reservation */
+
+/* Start footer */
+footer {
+    background: #061600;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 30%;
+}
+
+.logo p {
+    color: #fff;
+    text-align: center;
+    font-family: "Cairo", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h4 {
+    color: #fff;
+    text-align: right;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+li {
+    color: #fff;
+    text-align: right;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.links {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact span {
+    margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin-bottom: 30px;
+    }
+
+    h4,
+    li {
+        text-align: center;
+    }
+
+    .contact {
+        margin-top: 30px;
+    }
+
+    ul {
+        padding: 0;
+    }
+}
+
+/* End footer */
